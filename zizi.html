@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun Zizi!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+      color: #cc3366;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 8vw;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 5vw;
+      color: #d94d85;
+    }
+    .message {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+      line-height: 1.6em;
+    }
+    .image img {
+      width: 90%;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .video {
+      margin-top: 40px;
+    }
+    .video iframe,
+    .video video {
+      width: 90%;
+      max-width: 560px;
+      height: auto;
+      aspect-ratio: 16/9;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    canvas.confetti {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Selamat Ulang Tahun, Zizi!</h1>
+  <h2>25 Tahun yang Penuh Warna 🎉</h2>
+
+  <div class="message">
+    <p>Hari ini, kamu genap 25 tahun, Zizi!</p>
+    <p>Semoga semua impianmu tercapai, kesehatan dan kebahagiaan selalu menyertaimu.</p>
+    <p>Terima kasih telah menjadi pribadi yang luar biasa. Semangat terus ya bocil 💖</p>
+  </div>
+
+  <div class="image">
+    <img src="https://cdn.jsdelivr.net/gh/ekalanangw/cdn-files@main/images/zizi-2.jpg" alt="Foto Zizi">
+  </div>
+
+  <canvas class="confetti"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    // Confetti effect saat dibuka
+    confetti({
+      particleCount: 200,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
+  </script>
+</body>
+</html>
